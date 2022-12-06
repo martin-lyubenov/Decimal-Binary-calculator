@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/style/style.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <script src="/assets/js/main.js" defer></script>
+    <title>Binary-Decimal Calculator</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <label for="drop-down-menu" class="drop-down-menu-label"
+          >Selector</label
+        >
+        <select
+          name="gosho"
+          id="drop-down-menu"
+          class="drop-down-menu-selector"
+        >
+          <option value="Decimal-Binary">From Decimal to Binary</option>
+          <option value="Binary-Decimal">From Binary to Decimal</option>
+        </select>
+      </nav>
+      <div class="drop-down">
+        <div class="input">
+          <label for="input" class="input-label">Input</label>
+          <input
+            type="number"
+            placeholder="Write your number here"
+            class="input-field"
+          />
+        </div>
+        <div class="output">
+          <label for="output" class="output-label">Output</label>
+          <input type="number" class="output-field" disabled="disable" />
+        </div>
+      </div>
+      <div class="btn-place">
+        <button type="button" class="btn-clear" id="btn-clear">Clear</button>
+        <button type="button" class="btn" id="btn">Convert</button>
+      </div>
+    </main>
+  </body>
+</html>
+
+<!-- <button type="button" id="btn" onclick="decimalToBinary();">Click button</button> -->
